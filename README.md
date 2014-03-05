@@ -1,7 +1,7 @@
 unosicilia
 ==========
 
-UnoSicilia Website not completed
+UnoSicilia Website is not completed yet
 
 ## Try it
 (http://unosicilia.dlion.it)
