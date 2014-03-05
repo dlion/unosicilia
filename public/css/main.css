@@ -12,12 +12,15 @@ body {
 
 .page1 {
   background: #FFF url(../img/section1.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .page2 {
   background: #FFF url(../img/section2.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .page3 {
   background: #FFF url(../img/section3.jpg) no-repeat center;
+  background-size: cover;
 }
