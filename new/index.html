@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uno Sicilia</title>
+  <meta name="title" content="Uno Sicilia" />
+  <meta name="description" content="Prodotti biologici" />
+  <meta name="author" content="Domenico Luciani">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="public/js/jquery.onepage-scroll.min.js"></script>
+  <link href="public/css/onepage-scroll.css" rel="stylesheet" type="text/css">
+  <link href="public/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="main">
+    <section class="page1">Prova</section>
+    <section class="page2">Prova2</section>
+    <section class="page3">Prova3</section>
+  </div>
+  <script type="text/javascript">
+    $(".main").onepage_scroll({
+        sectionContainer: "section",
+        easing: "ease",
+        animationTime: 800,
+        pagination: true,
+        updateUrl: true,
+        keyboard: true,
+        loop: false
+    });
+  </script>
+</body>
+</html>
