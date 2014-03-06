@@ -16,7 +16,7 @@ $(function() {
     pagination: false,
     loop: false,
     keyboard: true,
-    responsiveFallback: false
+    responsiveFallback: 600
   });
 
   $(".page-scroll a").bind("click",function(event) {
