@@ -12,7 +12,7 @@ $(function() {
   $(".main").onepage_scroll({
     sectionContainer: "section",
     easing: "ease",
-    animationTime: 1000,
+    animationTime: 800,
     pagination: false,
     loop: false,
     keyboard: true,
