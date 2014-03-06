@@ -16,7 +16,7 @@ $(function() {
     pagination: false,
     loop: false,
     keyboard: true,
-    responsiveFallback: 600
+    responsiveFallback: false //Disattiva lo scrolling per alcuni tipi di dispositivi se settato ad un valore
   });
 
   $(".page-scroll a").bind("click",function(event) {
