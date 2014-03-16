@@ -1,181 +1,108 @@
-/* Navbar globale */
-nav {
-  position: fixed;
-  height: 50px;
-  display: block;
-  width: 100%;
-  background: #D74321;
-  text-align: center;
-  color: #FFF;
-  padding-top: 10px;
-  top: 0;
-  font-size: 11pt;
-  font-weight: bold;
-  border-bottom: 2px solid #283744;
-}
-
-nav ul {
-  float: right;
-  margin: 0;
-  padding-top: 15px;
-}
-
-nav li {
-  display: inline;
-  float: left;
-}
-
-nav a {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-nav a#pull {
-  display: none;
-}
-
-nav a:hover {
-  background-color: #e15939;
-}
-
-
-nav a#headerBrand {
-  float: left;
-  margin-left: 20px;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px)
-                   and (max-device-width : 480px) {
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 361px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 360px) {
- nav {
-   height: auto;
-   border-bottom: 0;
- }
-
-  nav ul {
-    display: none;
-    height: auto;
-  }
-
-  nav li {
-    width: 100%;
-    float: left;
-    position: relative;
-  }
-
-  nav a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-  }
-
-  nav a#headerBrand {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav a#headerBrand:hover {
-  }
-
-  nav a#pull {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-
-  nav a#pull:after {
-    content: "   ";
-    background: url(http://fakeimg.pl/50x40) no-repeat;
-    width: 50px;
-    height: 40px;
-    display: inline-block;
-    position: absolute;
-    right: 40px;
-    top: 5px;
-  }
-}
-
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
-       only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-nav ul {
-  padding-right: 30px;
-}
-
-nav li {
-  display: inline;
-  float: left;
-}
-
-nav a {
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  line-height: 20px;
-  text-shadow: 1px 1px 0px #283744;
-}
-
-.headerIn {
-  float: right;
-  padding-right: 50px;
-}
-
-.headerIn:after {
-  clear: both;
-}
-
-nav li a {
-  padding-right: 33px;
-}
-
-nav li:last-child a {
-  border-right: 0;
-}
-
-nav a:hover, nav a:active {
-  color: #afafaf;
-}
-
-*/
-
+/* Body */
 body {
   background-color: #ece8e5;
   color: rgba(0,0,0,0.5);
   font-family: 'Roboto', sans-serif;
 }
+
+/* Mobile First */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #D74321;
+  padding: 10px 5px;
+}
+
+header:before,
+header:after {
+  content:"";
+  display: table;
+}
+
+header:after {
+  clear: both;
+}
+
+#headerBrand {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 22px;
+  float: left;
+  letter-spacing: 0.2em;
+}
+
+#pull {
+  float: right;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0 30px;
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 10px;
+}
+
+#pull:hover,
+#pull:focus {
+  color: #fff;
+  background: #5A2B29;
+}
+
+.header {
+  height: auto;
+}
+
+ul {
+  list-style: disc;
+  padding: 0 0 0 20px;
+  margin: 0 0 1.5em;
+}
+
+.header ul {
+  clear: both;
+  list-style: none;
+  padding: 5px 0 1px 0;
+}
+
+.header li a {
+  display: block;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border-bottom: 1px solid #383838;
+}
+
+.header li:first-child {
+  border-top: 1px solid #383838;
+}
+
+.header li:last-child {
+  line-height: 0;
+  height: 0;
+  border-bottom: none;
+  letter-spacing: 0;
+}
+
+.header li a:hover,
+.header li a:focus {
+  color: #fff;
+  background: #5A2B29;
+}
+
 
 .intro p {
   width: 50%;

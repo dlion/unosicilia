@@ -3,7 +3,7 @@ $(document).ready(function() {
     anchors: ["Home", "Certificazioni", "Calendario", "Prodotti", "Aziende", "Contatti"],
     slidesColor: ['#FFF', '#FFF', '#FFF'],
     css3: true,
-    fixedElements: ".header"
+    fixedElements: "header"
   });
   var pull = $("#pull"),
       menu = $("nav ul");
