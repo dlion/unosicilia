@@ -27,7 +27,7 @@ $(document).ready(function() {
   // Se sono da mobile quando clicco su un li leva il menu
   $("li").on("click", function(e) {
     var w = $(window).width();
-    if ( w <= 600) {
+    if ( w <= 480) {
       menu.slideToggle();
     }
   });

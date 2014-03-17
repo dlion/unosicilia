@@ -38,7 +38,7 @@ header:after {
   color: #FFF;
   text-decoration: none;
   padding: 0 30px;
-  padding-top: 10px;
+  padding-top: 24px;
   font-size: 12px;
   font-weight: bold;
   line-height: 22px;
@@ -101,8 +101,8 @@ ul {
 }
 
 
-
-@media only screen and (min-width: 768px) {
+/* Dai tablet in su */
+@media only screen and (min-width: 600px) {
   #pull {
     display: none;
   }
@@ -139,6 +139,20 @@ ul {
   }
 }
 
+@media only screen and (min-width: 600px)
+                   and (max-width: 768px) {
+  .header li a {
+    letter-spacing: 0.2px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header li a {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
 
 .intro p {
   width: 50%;
