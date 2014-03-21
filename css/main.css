@@ -25,7 +25,8 @@ header:after {
   clear: both;
 }
 
-#headerBrand {
+#headerBrand #logouno {
+  border: none;
   text-decoration: none;
   font-size: 20px;
   line-height: 22px;
@@ -49,6 +50,7 @@ header:after {
   -moz-border-radius: 2px;
   border-radius: 2px;
   line-height: 10px;
+  margin-right: 10px;
 }
 
 #pull:hover,
@@ -138,7 +140,7 @@ ul {
     font-size: 16px;
   }
 }
-
+/* Tablet Landscape */
 @media only screen and (min-width: 600px)
                    and (max-width: 768px) {
   .header li a {
@@ -147,10 +149,15 @@ ul {
   }
 }
 
+/* Schermi enormi (Desktop) */
 @media only screen and (min-width: 1024px) {
   .header li a {
     letter-spacing: 2px;
     font-size: 20px;
+  }
+
+  .header li:last-child {
+    padding-right: 13px;
   }
 }
 
