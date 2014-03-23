@@ -59,7 +59,7 @@ header:after {
   background: #5A2B29;
 }
 
-ul {
+nav.header > ul {
   list-style: disc;
   padding: 0 0 0 20px;
   margin: 0 0 1.5em;
@@ -101,7 +101,6 @@ ul {
   color: #fff;
   background: #5A2B29;
 }
-
 
 /* Dai tablet in su */
 @media only screen and (min-width: 600px) {
@@ -147,6 +146,10 @@ ul {
     letter-spacing: 0.2px;
     font-size: 12px;
   }
+
+  .rslides {
+    max-width: 400px;
+  }
 }
 
 /* Schermi enormi (Desktop) */
@@ -159,14 +162,25 @@ ul {
   .header li:last-child {
     padding-right: 13px;
   }
+
+  .rslides {
+    max-width: 600px;
+  }
 }
 
 .intro p {
   width: 50%;
-  margin 0 auto;
+  margin: 0 auto;
   font-size: 1.5em;
 }
 
 .section {
   text-align: center;
+}
+
+.rslides {
+  box-shadow: 0 0 20px #000;
+  -moz-box-shadow: 0 0 20px #000;
+  -webkit-box-shadow: 0 0 20px #000;
+  margin: 0 auto;
 }
