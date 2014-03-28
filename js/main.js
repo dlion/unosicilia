@@ -1,5 +1,9 @@
 $(document).ready(function() {
-  $(".rslides").responsiveSlides();
+  $(".rslides").responsiveSlides({
+    pager: true,
+    auto: false,
+    fade: 500
+  });
 
   // Configurazione del plugin fullPage
   $.fn.fullpage({
@@ -11,7 +15,7 @@ $(document).ready(function() {
 
   // Prendo il pull e il menu
   var pull = $("#pull"),
-      menu = $("nav ul");
+      menu = $(".header nav > ul");
 
   // Se clicco il pull
   $(pull).on("click", function(e) {
@@ -27,7 +31,7 @@ $(document).ready(function() {
   });
 
   // Se sono da mobile quando clicco su un li leva il menu
-  $("li").on("click", function(e) {
+  $(".header li").on("click", function(e) {
     var w = $(window).width();
     if ( w <= 480) {
       menu.slideToggle();
