@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".rslides").responsiveSlides({
     pager: true,
-    auto: false,
+    auto: true,
     fade: 500
   });
 
