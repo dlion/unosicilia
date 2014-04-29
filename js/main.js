@@ -1,10 +1,4 @@
 $(document).ready(function() {
-  $(".rslides").responsiveSlides({
-    pager: true,
-    auto: true,
-    fade: 500
-  });
-
   // Configurazione del plugin fullPage
   $.fn.fullpage({
     anchors: ["Home", "Certificazioni", "Calendario", "Prodotti", "Aziende", "Contatti"],

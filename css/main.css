@@ -1,6 +1,5 @@
 /* Body */
 body {
-  background-color: #ece8e5;
   color: rgba(0,0,0,0.5);
   font-family: 'Roboto', sans-serif;
 }
@@ -60,7 +59,6 @@ header:after {
 }
 
 nav.header > ul {
-  padding: 0 0 0 20px;
   margin: 0 0 1.5em;
 }
 
@@ -275,4 +273,8 @@ nav.header > ul {
   background: #000;
   background: rgba(0,0,0, .8);
   color: #fff;
+}
+
+#section0, #section1, #section2, #section3, #slide1, #slide2, #slide3, #section4, #section5 {
+    background: url('PORZIONE_BASE_SITO_SFONDO.png') repeat;
 }
