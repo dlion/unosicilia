@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   // Prendo il pull e il menu
   var pull = $("#pull"),
-      menu = $(".header nav > ul");
+      menu = $(".header > ul");
 
   // Se clicco il pull
   $(pull).on("click", function(e) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
 
   // Se sono da mobile quando clicco su un li leva il menu
-  $(".header li").on("click", function(e) {
+  $(".header > ul > li > a").on("click", function(e) {
     var w = $(window).width();
     if ( w <= 480) {
       menu.slideToggle();
