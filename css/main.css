@@ -99,6 +99,14 @@ nav.header > ul {
   background: #5A2B29;
 }
 
+.scrittaMenu {
+    margin-left: 40px;
+}
+
+.fa {
+    float: left;
+}
+
 /* Dai tablet in su */
 @media only screen and (min-width: 600px) {
   #pull {
