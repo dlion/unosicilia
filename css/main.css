@@ -4,285 +4,73 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Mobile First */
+/**
+ * Imposta l'header
+ */
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #D74321;
-  padding: 10px 5px;
+  background: #FFF;
+  height: 95px;
+  margin-left: 95px;
+  margin-right: 95px;
 }
 
-header:before,
-header:after {
-  content:"";
-  display: table;
-}
-
-header:after {
-  clear: both;
-}
-
-#headerBrand #logouno {
-  border: none;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 22px;
-  float: left;
-  letter-spacing: 0.2em;
-}
-
-#pull {
-  float: right;
-  color: #FFF;
-  text-decoration: none;
-  padding: 0 30px;
-  padding-top: 24px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
-  height: 22px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  line-height: 10px;
-  margin-right: 10px;
-}
-
-#pull:hover,
-#pull:focus {
-  color: #fff;
-  background: #5A2B29;
-}
-
-nav.header > ul {
-  margin: 0 0 1.5em;
-}
-
-.header > ul {
-  clear: both;
-  list-style: none;
-  padding: 5px 0 1px 0;
-  display: none;
-}
-
-.header li a {
-  display: block;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  height: 2em;
-  border-bottom: 1px solid #383838;
-}
-
-.header li:first-child {
-  border-top: 1px solid #383838;
-}
-
-.header li:last-child {
-  line-height: 0;
-  height: 0;
-  border-bottom: none;
-  letter-spacing: 0;
-}
-
-.header li a:hover,
-.header li a:focus {
-  color: #fff;
-  background: #5A2B29;
-}
-
-.scrittaMenu {
-    margin-left: 40px;
-}
-
-.fa {
-    float: left;
-}
-
-/* Dai tablet in su */
-@media only screen and (min-width: 600px) {
-  #pull {
-    display: none;
-  }
-
-  .header {
+/**
+ * Setta l'interno dell'header
+ */
+.header {
     position: absolute;
-    top: 14px;
-    right: 10px;
+    top: 38px;
+    right: 95px;
     background: none;
-  }
+    margin-right: 95px;
+}
 
-  .header > ul {
-    display: block;
-  }
-
-  .header li {
+/**
+ * Mette l'header inline
+ */
+.header li {
     display: inline;
-  }
-
-  .header li a {
-    float: left;
-    border: none;
-    padding: 0 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-  }
 }
 
-
-@media only screen and (max-width: 768px) {
-  .header li a {
-    letter-spacing: 0.5px;
-    font-size: 16px;
-  }
-}
-
-
-/* Tablet Landscape */
-@media only screen and (min-width: 600px)
-                   and (max-width: 768px) {
-  .header li a {
-    letter-spacing: 0.2px;
-    font-size: 12px;
-  }
-
-  .rslides {
-    max-width: 400px;
-  }
-}
-
-/* Schermi enormi (Desktop) */
-@media only screen and (min-width: 1024px) {
-  .header li a {
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-
-  .header li:last-child {
-    padding-right: 13px;
-  }
-
-  .rslides {
-    box-shadow: 0 0 20px #000;
-    -moz-box-shadow: 0 0 20px #000;
-    -webkit-box-shadow: 0 0 20px #000;
-    margin: 0 auto;
-    z-index: 3;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    top: 0;
-    left: 0;
+/**
+ * Come sono fatti i box dell'header
+ */
+.header li a {
+    margin-right: 4px;
     display: block;
-    filter: alpha(opacity=1);
-    overflow: hidden;
-    position: absolute;
-    max-width: 600px;
-  }
-  .caption {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    text-align: center;
-    background: #000;
-    background: rgba(0,0,0, .8);
     color: #fff;
-  }
+    text-decoration: none;
+    background-color: #D73F22;
+    float: left;
+    height: 33px;
+    width: 115px;
 }
 
-
-.rslides_here a {
-  background: #222;
-  background: rgba(0,0,0, .8);
+/*
+ * Il testo dentro i box nell'header
+ */
+.scrittaMenu {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 4px;
+    font-weight: 500;
 }
 
-.rslides_tabs a {
-  text-indent: -9999px;
-  overflow: hidden;
-  -webkit-border-radius: 15px;
-  -mpz-border-radius: 15px;
-  border-radius: 15px;
-  background: #ccc;
-  background: rgba(0, 0, 0, .2);
-  display: inline-block;
-  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  width: 9px;
-  height: 9px;
+/*
+ * Cambia il colore dei tasti selezionati
+ */
+#menu li.active a{
+    background-color: #FFF;
+    color: #D73F22;
 }
 
-.rslides {
-  box-shadow: 0 0 20px #000;
-  -moz-box-shadow: 0 0 20px #000;
-  -webkit-box-shadow: 0 0 20px #000;
-  margin: 0 auto;
-}
-
-.rslides_tabs li {
-  display: inline;
-  float: none;
-  margin-right: 5px;
-}
-
-.rslides_nav.next {
-  left: auto;
-  right: 0;
-}
-
-.rslides_nav:focus {
-  outline: none;
-}
-
-
-.section {
-  text-align: center;
-}
-
-.rslides_tabs a {
-  text-indent: -9999px;
-  overflow: hidden;
-  -webkit-border-radius: 15px;
-  -mpz-border-radius: 15px;
-  border-radius: 15px;
-  background: #ccc;
-  background: rgba(0, 0, 0, .2);
-  display: inline-block;
-  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  width: 9px;
-  height: 9px;
-}
-
-.rslides_here a {
-    background: #222;
-    background: rgba(0,0,0, .8);
-}
-
-.caption {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 15px;
-  text-align: center;
-  background: #000;
-  background: rgba(0,0,0, .8);
-  color: #fff;
-}
-
-#section0, #section1, #section2, #section3, #slide1, #slide2, #slide3, #section4, #section5 {
-    background: url('PORZIONE_BASE_SITO_SFONDO.min.png') repeat;
+/*
+ * Leva i pallini dai link cliccati
+ */
+a {
+    outline: 0;
 }
