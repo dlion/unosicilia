@@ -31,9 +31,9 @@ $(document).ready(function() {
     anchors: ["Home", "Prodotti", "Produttori", "Calendario", "Certificazioni", "Contatti"],
     slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
     css3: true,
-    fixedElements: "header",
-    verticalCentered: true,
-    animateAnchor: true,
+    fixedElements: 'header',
+    resize: false,
+    paddingTop: '-34px',
      onLeave: function(index, nextIndex, direction){
        switch(index) {
          case 1:

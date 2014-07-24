@@ -1,63 +1,72 @@
-/* Body */
+/**
+ * Body
+ */
 body {
   color: rgba(0,0,0,0.5);
   font-family: 'Roboto', sans-serif;
 }
 
 /**
- * Imposta l'header
+ * Imposto l'header
  */
-
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #FFF;
-  height: 95px;
-  margin-left: 95px;
-  margin-right: 95px;
+    position:fixed;
+    height: 70px;
+    display:block;
+    width: 100%;
+    background: #FFF;
+    z-index:100;
+    top: 0px;
 }
 
 /**
- * Setta l'interno dell'header
- */
-.header {
-    position: absolute;
-    top: 38px;
-    right: 95px;
-    background: none;
-    margin-right: 95px;
+ * Metto il logo spostato
+*/
+#headerBrand {
+   margin-left: 70px;
+}
+
+#headerListone {
+    float: right;
+    margin-right: 70px;
 }
 
 /**
- * Mette l'header inline
+ * Levo lo style alla lista
  */
-.header li {
-    display: inline;
+ul {
+    list-style-type: none;
 }
 
 /**
- * Come sono fatti i box dell'header
+ * Metto la lista inline
  */
-.header li a {
-    margin-right: 4px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    background-color: #D73F22;
+li {
     float: left;
+}
+
+/**
+ * Imposto i blocchi della lista
+ */
+li a {
+    margin-right: 6px;
     height: 33px;
     width: 115px;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #D73F22;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
 }
 
-/*
- * Il testo dentro i box nell'header
+/**
+ * Imposto le scritte della lista
  */
 .scrittaMenu {
-    font-size: 17px;
-    text-align: center;
-    margin-top: 4px;
-    font-weight: 500;
+    padding-top: 7px;
+     font-size: 16px;
 }
 
 /*
@@ -74,3 +83,56 @@ header {
 a {
     outline: 0;
 }
+
+
+#homeImage{
+    width: 100%;
+}
+
+.primaImmagineIntro {
+}
+
+.content {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 5px;
+}
+
+.riga {
+    background-color: #D73F22;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.titleBoxHome {
+    background-color: #42210B;
+    font-size: 24px;
+}
+
+.titleBoxHome h3 {
+    color: #FFF;
+    margin-left: 15px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.contentBoxHome {
+    background-color: rgba(66,33,11,0.15);
+    height: 260px;
+}
+
+.contentBoxHome p {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: #592D2B;
+}
+
+
+
+
+

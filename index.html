@@ -2,92 +2,141 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Uno Sicilia</title>
   <meta name="author" content="Domenico Luciani" />
   <meta name="description" content="Biologico" />
   <meta name="keywords" content="bio, biologico, uno sicilia" />
   <meta name="Resource-type" content="Document" />
 
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/kube.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
   <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-  <header>
-    <a href="#" id="headerBrand">
-      <img id="logouno" src="img/logoNuovo.png" alt="Logo" width="95" />
-    </a>
-    <nav class="header">
-      <ul id="menu">
-        <li data-menuanchor="Home" class="active">
-            <a href="#Home">
-                <div class="scrittaMenu">Home</div>
-            </a>
-        </li>
-        <li data-menuanchor="Prodotti">
-            <a href="#Prodotti">
-                <div class="scrittaMenu">Prodotti</div>
-            </a>
-        </li>
-        <li data-menuanchor="Produttori">
-            <a href="#Produttori">
-                <div class="scrittaMenu">Produttori</div>
-            </a>
-        </li>
-        <li data-menuanchor="Calendario">
-            <a href="#Calendario">
-                <div class="scrittaMenu">Calendario</div>
-            </a>
-        </li>
-        <li data-menuanchor="Certificazioni">
-            <a href="#Certificazioni">
-                <div class="scrittaMenu">Certificazioni</div>
-            </a>
-        </li>
-        <li data-menuanchor="Contatti">
-            <a href="#Contatti">
-                <div class="scrittaMenu">Contatti</div>
-            </a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+        <div class="units-row end units-split">
+            <div class="unit-10" id="headerBrand">
+                <a href="#">
+                    <img  class="pure-img" id="logouno" src="img/logoNuovo.png" alt="Logo" width="70" />
+                </a>
+            </div>
+            <div class="unit-85" id="headerListone">
+                <ul id="menu">
+                    <li data-menuanchor="Home" class="active">
+                        <a href="#Home">
+                            <div class="scrittaMenu">Home</div>
+                        </a>
+                    </li>
+                    <li data-menuanchor="Prodotti">
+                        <a href="#Prodotti">
+                            <div class="scrittaMenu">Prodotti</div>
+                        </a>
+                    </li>
+                    <li data-menuanchor="Produttori">
+                        <a href="#Produttori">
+                            <div class="scrittaMenu">Produttori</div>
+                        </a>
+                    </li>
+                    <li data-menuanchor="Calendario">
+                        <a href="#Calendario">
+                            <div class="scrittaMenu">Calendario</div>
+                        </a>
+                    </li>
+                    <li data-menuanchor="Certificazioni">
+                        <a href="#Certificazioni">
+                            <div class="scrittaMenu">Certificazioni</div>
+                        </a>
+                    </li>
+                    <li data-menuanchor="Contatti">
+                        <a href="#Contatti">
+                            <div class="scrittaMenu">Contatti</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
   </header>
 
-  <div class="section" id="section0">
-    <div class="intro">
-      <h1>HOME</h1>
-    </div>
-  </div>
-  <div class="section" id="section1">
-    <div class="intro">
-      <h1>Prodotti</h1>
-    </div>
-  </div>
-  <div class="section" id="section2">
-    <div class="intro">
-      <h1>Produttori</h1>
-    </div>
-  </div>
-  <div class="section" id="section3">
-      <div class="intro">
-          <h1>Calendario</h1>
+  <div id="fullpage" class="units-container">
+      <div class="section" id="section0">
+        <div class="intro">
+            <div class="units-row end units-split primaImmagineIntro">
+                <div class="unit-100">
+                    <img id="homeImage" src="materiale/HOME_UNOSICILIA.jpg" alt="" />
+                </div>
+            </div>
+            <div class="units-row end units-split">
+                <div class="unit-95 riga"></div>
+            </div>
+            <div class="units-row end content">
+                <div class="unit-33">
+                    <div class="boxHome">
+                        <div class="titleBoxHome">
+                            <h3>Chi Siamo</h3>
+                        </div>
+                        <div class="contentBoxHome">
+                            <p>Siamo una Cooperativa di produttori agricoli siciliani riconosciuta come Organizzazione di Produttori ai sensi della vigente normativa comunitaria. I nostri soci produttori si trovano dislocati in tutto il territorio regionale.
+                                Uno dei nostri principali obiettivi è recuperare il giusto rapporto tra la terra e chi la coltiva, il che non significa voler tornare al passato ma sviluppare pratiche agricole che rispettino l’ambiente ed evitino lo sfruttamento eccessivo delle risorse in particolare del suolo, dell’acqua e dell’aria, utilizzando invece tali risorse all’interno di un modello di sviluppo che possa durare nel tempo tutelando così il territorio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit-33">
+                    <div class="boxHome">
+                        <div class="titleBoxHome">
+                            <h3>Mission</h3>
+                        </div>
+                        <div class="contentBoxHome">
+                            <p>Attraverso la nostra cooperativa proponiamo un modello produttivo che sostenga gli agricoltori e risponda alle esigenze del consumatore finale offrendo prodotti sani, gustosi e di alta qualità, nati solo ed esclusivamente da scelte consapevoli a sostegno dell’ambiente. Un sistema, dunque, adatto a sviluppare le enormi potenzialità dell’agricoltura siciliana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit-33">
+                    <div class="boxHome">
+                        <div class="titleBoxHome">
+                            <h3>Territorio</h3>
+                        </div>
+                        <div class="contentBoxHome">
+                            <p>Vogliamo tracciare le linee guida per creare un'identità agricola siciliana forte e coesa, che dunque non privilegi solo alcuni settori dando un'immagine debole e frastagliata di sé, ma che unisca i diversi comparti che la compongono, puntando sulla ricerca e sull'innovazione per mettere in atto nuovi metodi che permettano di migliorare le colture che produciamo, riportando alla luce antiche varietà che si stanno perdendo nel tempo e potenziando i prodotti che caratterizzano la nostra regione.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
-  </div>
-  <div class="section" id="section4">
-    <div class="intro">
-      <h1>Certificazioni</h1>
-    </div>
-  </div>
-  <div class="section" id="section5">
-    <div class="intro">
-      <h1>Contatti</h1>
-    </div>
+      <div class="section" id="section1">
+        <div class="intro">
+          <h1>Prodotti</h1>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="intro">
+          <h1>Produttori</h1>
+        </div>
+      </div>
+      <div class="section" id="section3">
+          <div class="intro">
+              <h1>Calendario</h1>
+          </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="intro">
+          <h1>Certificazioni</h1>
+        </div>
+      </div>
+      <div class="section" id="section5">
+        <div class="intro">
+          <h1>Contatti</h1>
+        </div>
+      </div>
   </div>
 </body>
 </html>
