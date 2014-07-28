@@ -49,7 +49,7 @@ li {
  * Imposto i blocchi della lista
  */
 li a {
-    margin-right: 6px;
+    margin-right: 20px;
     height: 33px;
     width: 115px;
     display: block;
@@ -99,7 +99,7 @@ a {
 }
 
 .riga {
-    background-color: #D73F22;
+    background-color: #42210B;
     height: 2px;
     margin-top: 5px;
     margin-left: 70px;
