@@ -84,6 +84,10 @@ a {
     outline: 0;
 }
 
+#homeImage {
+    width: 100%;
+    height: 270px;
+}
 
 .riga {
     background-color: #42210B;
@@ -128,7 +132,7 @@ a {
     font-family: 'Roboto', sans-serif;
     color: #592D2B;
     padding-top: 2px;
-    line-height: 1.4em;
+    line-height: 1.3em;
 }
 
 
