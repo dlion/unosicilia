@@ -85,25 +85,19 @@ a {
 }
 
 
-#homeImage{
-    width: 100%;
+.riga {
+    background-color: #42210B;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
-.primaImmagineIntro {
-}
 
 .content {
     margin-left: 70px;
     margin-right: 70px;
-    margin-top: 5px;
-}
-
-.riga {
-    background-color: #42210B;
-    height: 2px;
-    margin-top: 5px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 10px;
 }
 
 .titleBoxHome {
@@ -111,27 +105,30 @@ a {
     font-size: 18px;
     height: 30px;
     margin-bottom: 0px;
+    
 }
 
 .titleBoxHome h3 {
     color: #FFF;
     margin-left: 15px;
     padding: 0px;   
+    font-weight: 500;
 }
 
 .contentBoxHome {
     background-color: rgba(66,33,11,0.15);
-    height: 260px;
+    height: 230px;
 }
 
 .contentBoxHome p {
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     color: #592D2B;
     padding-top: 2px;
+    line-height: 1.4em;
 }
 
 
