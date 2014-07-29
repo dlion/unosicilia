@@ -33,7 +33,7 @@ $(document).ready(function() {
     css3: true,
     fixedElements: 'header',
     resize: false,
-    paddingTop: '-34px',
+    paddingTop: '65px',
      onLeave: function(index, nextIndex, direction){
        switch(index) {
          case 1:
