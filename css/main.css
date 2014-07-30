@@ -89,7 +89,7 @@ a {
     height: 236px;
 }
 
-.riga {
+.riga-brown {
     background-color: #42210B;
     height: 2px;
     margin-top: 10px;
@@ -97,6 +97,13 @@ a {
     margin-right: 70px;
 }
 
+.riga-orange {
+    background-color: #D73F22;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
 
 .content {
     margin-left: 70px;
@@ -109,7 +116,6 @@ a {
     font-size: 18px;
     height: 30px;
     margin-bottom: 0px;
-    
 }
 
 .titleBoxHome h3 {
@@ -121,7 +127,7 @@ a {
 
 .contentBoxHome {
     background-color: rgba(66,33,11,0.15);
-    height: 240px;
+    height: 245px;
 }
 
 .contentBoxHome p {
@@ -131,9 +137,88 @@ a {
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     color: #592D2B;
-    padding-top: 2px;
+    padding: 4px;
     line-height: 1.2em;
 }
+
+/**
+ * SECONDA PAGINA
+ */
+.box-uno {
+    background-color: #D73F22;
+    width: 380px;
+    height: 245px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 14px;
+    line-height: 1.4em;
+}
+
+.titolo-hidden h3 {
+    color: #FFF;
+}
+
+
+.sottobox-uno-due {
+    background-color: rgba(66,33,11,0.15);
+    height: 122.5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3em;
+    width: 380px;
+}
+
+.box-due {
+    width: 380px;
+    height: 122.5px;
+}
+
+.sottobox-due {
+    height: 122.5px;
+    width: 380px;
+    background-color: rgba(66,33,11,0.15);
+}
+
+.sottobox-due p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.sottobox-due-due {
+    width: 380px;
+    height: 122.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
