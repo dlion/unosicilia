@@ -159,6 +159,11 @@ a {
     color: #FFF;
 }
 
+.sottobox-uno {
+   
+    height: 122.5px;
+}
+
 
 .sottobox-uno-due {
     background-color: rgba(66,33,11,0.15);
@@ -166,17 +171,12 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3em;
-    width: 380px;
-}
-
-.box-due {
-    width: 380px;
-    height: 122.5px;
+   
 }
 
 .sottobox-due {
     height: 122.5px;
-    width: 380px;
+    
     background-color: rgba(66,33,11,0.15);
 }
 
@@ -186,9 +186,9 @@ a {
     line-height: 1.3em;
 }
 
-.sottobox-due-due {
-    width: 380px;
+.sottobox-due-due #fragoleImg{
     height: 122.5px;
+    width: 410px;
 }
 
 
