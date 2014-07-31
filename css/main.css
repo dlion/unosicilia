@@ -144,7 +144,7 @@ a {
 /**
  * SECONDA PAGINA
  */
-.box-uno {
+.box-uno-orange {
     background-color: #D73F22;
     width: 380px;
     height: 245px;
@@ -176,8 +176,8 @@ a {
 
 .sottobox-due {
     height: 122.5px;
-    
     background-color: rgba(66,33,11,0.15);
+    padding: 4px;
 }
 
 .sottobox-due p {
@@ -191,18 +191,30 @@ a {
     width: 410px;
 }
 
+/**
+ * TERZA PAGINA
+ */
 
+.box-uno-brown {
+    background-color: #42210B;
+    width: 380px;
+    height: 245px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 14px;
+    line-height: 1.4em;
+    text-align: right;
+}
 
+.titolo-hidden h3 {
+    color: #FFF;
+}
 
-
-
-
-
-
-
-
-
-
+#produttoreImg {
+    width: 410px;
+    height: 245px;
+}
 
 
 
