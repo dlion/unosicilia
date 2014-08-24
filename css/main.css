@@ -164,7 +164,6 @@ a {
 }
 
 .sottobox-uno {
-   
     height: 122.5px;
 }
 
@@ -175,7 +174,6 @@ a {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3em;
-   
 }
 
 .sottobox-due {
@@ -192,7 +190,7 @@ a {
 
 .sottobox-due-due #fragoleImg{
     height: 122.5px;
-    width: 410px;
+    width: 1000px;
 }
 
 /**
@@ -219,7 +217,7 @@ a {
 }
 
 #produttoreImg {
-    width: 410px;
+    width: 1000px;
     height: 245px;
 }
 
