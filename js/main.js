@@ -14,8 +14,8 @@ $(document).ready(function() {
      $("li[data-menuanchor='Produttori']").addClass("active");
    });
 
-   $("li[data-menuanchor='Calendario']").click(function() {
-     $("li[data-menuanchor='Calendario']").addClass("active");
+   $("li[data-menuanchor='Trasformati']").click(function() {
+     $("li[data-menuanchor='Trasformati']").addClass("active");
    });
 
    $("li[data-menuanchor='Certificazioni']").click(function() {
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   // Configurazione del plugin fullPage
   $.fn.fullpage({
-    anchors: ["Home", "Prodotti", "Produttori", "Calendario", "Certificazioni", "Contatti"],
+    anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
     slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
     css3: true,
     fixedElements: 'header',
@@ -46,7 +46,7 @@ $(document).ready(function() {
            $("li[data-menuanchor='Produttori']").removeClass("active");
           break;
         case 4:
-           $("li[data-menuanchor='Calendario']").removeClass("active");
+           $("li[data-menuanchor='Trasformati']").removeClass("active");
           break;
         case 5:
            $("li[data-menuanchor='Certificazioni']").removeClass("active");

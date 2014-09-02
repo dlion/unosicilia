@@ -218,10 +218,12 @@ a {
 
 #produttoreImg {
     width: 1000px;
-    height: 218px;
+    height: 245px;
 }
 
-
+.testo-trasformato p {
+    line-height: 1.3em;
+}
 
 
 
