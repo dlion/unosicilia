@@ -236,7 +236,15 @@ a {
     height: 122.5px;
 }
 
+.banneroneProduttori {
+    max-width:  100%;
+    position: relative;
+    overflow: auto;
+}
 
+.banneroneProduttori ul { margin: 0; paddin: 0; }
+.banneroneProduttori li { list-style: none; }
+.banneroneProduttori ul li { float: left; }
 
 
 

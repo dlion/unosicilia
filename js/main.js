@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+  $(".banneroneProduttori").unslider({
+    fluid: false,
+    delay: 4000,
+    speed: 2000
+  });
   /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
    */
