@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $(".banneroneProduttori").unslider({
+  $(".banneroneSlide").unslider({
     fluid: false,
     delay: 4000,
     speed: 2000
