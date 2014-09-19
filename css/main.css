@@ -229,15 +229,13 @@ a {
     line-height: 1.3em;
 }
 
-
-
 #fragoleImg {
     width: 1000px;
     height: 122.5px;
 }
 
 .banneroneSlide {
-    max-width:  100%;
+    max-width: 100% !important;;
     position: relative;
     overflow: auto;
 }
@@ -246,9 +244,24 @@ a {
 .banneroneSlide li { list-style: none; }
 .banneroneSlide ul li { float: left; }
 
+#doveSiamo {
+    margin-top: 40px;
+}
 
+#doveSiamo h2 {
+    color: #D73F22;
+}
 
+#infoContatti {
+    margin-top: 10px;
+}
 
+#infoContatti p {
+    line-height: 1.3em;
+    font-weight: 700;
+    font-size: 25px;
+    color: #42210B;
+}
 
 
 
