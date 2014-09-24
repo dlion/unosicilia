@@ -113,7 +113,6 @@ a {
     background-color: #D73F22;
     height: 2px;
     margin-top: 10px;
-    margin-right: 75px;
 }
 
 .content {
@@ -274,4 +273,19 @@ a {
     font-weight: 700;
     font-size: 25px;
     color: #42210B;
+}
+
+#mappa {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+#mappa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 290px !important;
 }
