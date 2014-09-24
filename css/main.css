@@ -277,7 +277,7 @@ a {
 
 #mappa {
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 26%;
     height: 0;
     overflow: hidden;
 }
@@ -287,5 +287,4 @@ a {
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 290px !important;
 }
