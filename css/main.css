@@ -277,7 +277,7 @@ a {
 
 #mappa {
     position: relative;
-    padding-bottom: 26%;
+    padding-bottom: 24%;
     height: 0;
     overflow: hidden;
 }
@@ -287,4 +287,9 @@ a {
     top: 0;
     left: 0;
     width: 100% !important;
+}
+
+#infoContatti p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3em;
 }
