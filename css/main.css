@@ -109,9 +109,10 @@ a {
     margin-right: 70px;
 }
 
-#mappa {
-    margin-left: 70px;
-    margin-right: 70px;
+.riga-orange2 {
+    background-color: #D73F22;
+    height: 2px;
+    margin-top: 10px;
 }
 
 .content {
