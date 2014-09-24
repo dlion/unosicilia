@@ -38,7 +38,7 @@ $(document).ready(function() {
   // Configurazione del plugin fullPage
   $.fn.fullpage({
     anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
-    slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
+    slidesColor: ['#f5f4f3', '#f5f4f3', '#f5f4f3', '#f5f4f3', '#f5f4f3', '#f5f4f3'],
     css3: true,
     fixedElements: 'header',
     resize: false,
