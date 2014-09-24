@@ -5,7 +5,8 @@ $(document).ready(function() {
     delay: 4000,
     speed: 2000,
     autoplay: true,
-    loop: false
+    loop: false,
+    pause: false
   });
   /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
