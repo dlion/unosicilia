@@ -78,6 +78,22 @@ li a {
 }
 
 /*
+ * Non fa cambiare il colore sul bottoncino attivo se ci passo di sopra
+ */
+#menu li.active a:hover{
+    background-color: #FFF;
+    color: #D73F22;
+}
+
+/*
+ * Non fa cambiare il colore sul bottoncino se ci passo di sopra
+ */
+#menu li a:hover {
+    color: white;
+    background-color: #D73F22;
+}
+
+/*
  * Leva i pallini dai link cliccati
  */
 a {
