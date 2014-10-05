@@ -4,7 +4,7 @@ $(document).ready(function() {
     fluid: false,
     delay: 4000,
     speed: 2000,
-    autoplay: true,
+    autoplay: false,
     loop: false,
     pause: false
   });
@@ -36,7 +36,7 @@ $(document).ready(function() {
    });
 
   // Configurazione del plugin fullPage
-  $.fn.fullpage({
+  $('#fullpage').fullpage({
     anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
     slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
     css3: true,
@@ -44,6 +44,7 @@ $(document).ready(function() {
     resize: false,
     paddingTop: '65px',
      onLeave: function(index, nextIndex, direction){
+       console.err("CIAAOOON");
        switch(index) {
          case 1:
          $("li[data-menuanchor='Home']").removeClass("active");
