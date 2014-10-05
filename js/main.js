@@ -44,7 +44,7 @@ $(document).ready(function() {
     resize: false,
     paddingTop: '65px',
      onLeave: function(index, nextIndex, direction){
-       console.err("CIAAOOON");
+       console.log("vado: "+nextIndex+ "Verso il : "+direction);
        switch(index) {
          case 1:
          $("li[data-menuanchor='Home']").removeClass("active");
@@ -63,6 +63,27 @@ $(document).ready(function() {
           break;
         case 6:
            $("li[data-menuanchor='Contatti']").removeClass("active");
+          break;
+       }
+
+       switch(nextIndex) {
+         case 1:
+           $("li[data-menuanchor='Home']").addClass("active");
+          break;
+        case 2:
+           $("li[data-menuanchor='Prodotti']").addClass("active");
+          break;
+        case 3:
+           $("li[data-menuanchor='Produttori']").addClass("active");
+          break;
+        case 4:
+           $("li[data-menuanchor='Trasformati']").addClass("active");
+          break;
+        case 5:
+           $("li[data-menuanchor='Certificazioni']").addClass("active");
+          break;
+        case 6:
+           $("li[data-menuanchor='Contatti']").addClass("active");
           break;
        }
      }

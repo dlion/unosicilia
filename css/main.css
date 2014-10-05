@@ -89,7 +89,12 @@ li a {
  * Non fa cambiare il colore sul bottoncino se ci passo di sopra
  */
 #menu li a:hover {
-    color: white;
+    color: #FFF;
+    background-color: #D73F22;
+}
+
+#menu li a {
+    color: #FFF;
     background-color: #D73F22;
 }
 
