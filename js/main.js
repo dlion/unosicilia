@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  $(".banneroneSlide").unslider({
-    fluid: false,
-    delay: 4000,
-    speed: 2000,
-    autoplay: false,
-    loop: false,
-    pause: false
+  var slidey = $(".banneroneSlide").unslider({
+    fluid: true,
+    dots: true,
+    delay: false
   });
+
+
+
   /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
    */
