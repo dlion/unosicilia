@@ -6,7 +6,32 @@ $(document).ready(function() {
     delay: false
   });
 
+  //Il banner che mostra la frutta
+  var banneroneFrutta = slidey.data('unslider-1');
 
+  /*
+   * Se clicco sulla lista
+   */
+
+  $("#linkFragole").click(function() {
+    banneroneFrutta.to(0);
+  });
+
+  $("#linkOlive").click(function() {
+    banneroneFrutta.to(1);
+  });
+
+  $("#linkLimoni").click(function() {
+    banneroneFrutta.to(2);
+  });
+
+  $("#linkArance").click(function() {
+    banneroneFrutta.to(3);
+  });
+
+  $("#linkPomodori").click(function() {
+    banneroneFrutta.to(4);
+  });
 
   /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
@@ -44,7 +69,6 @@ $(document).ready(function() {
     resize: false,
     paddingTop: '65px',
      onLeave: function(index, nextIndex, direction){
-       console.log("vado: "+nextIndex+ "Verso il : "+direction);
        switch(index) {
          case 1:
          $("li[data-menuanchor='Home']").removeClass("active");

@@ -208,6 +208,30 @@ a {
     padding: 4px;
 }
 
+.sottobox-uno-due-lista {
+    background-color: rgba(66,33,11,0.15);
+    height: 122.5px;
+    padding: 4px;
+}
+
+.sottobox-uno-due-lista p {
+    font-size: 18px;
+    font-weight: 100;
+    padding: 4px;
+    margin-top: 50px;
+    padding-left: 25px;
+}
+
+
+#LinkPrimaFila span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#LinkPrimaFila span:hover {
+    text-decoration: underline;
+}
+
 .sottobox-due {
     height: 122.5px;
     background-color: rgba(66,33,11,0.15);
