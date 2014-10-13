@@ -14,23 +14,23 @@ $(document).ready(function() {
    */
 
   $("#linkFragole").click(function() {
-    banneroneFrutta.to(0);
+    banneroneFrutta.move(0);
   });
 
   $("#linkOlive").click(function() {
-    banneroneFrutta.to(1);
+    banneroneFrutta.move(1);
   });
 
   $("#linkLimoni").click(function() {
-    banneroneFrutta.to(2);
+    banneroneFrutta.move(2);
   });
 
   $("#linkArance").click(function() {
-    banneroneFrutta.to(3);
+    banneroneFrutta.move(3);
   });
 
   $("#linkPomodori").click(function() {
-    banneroneFrutta.to(4);
+    banneroneFrutta.move(4);
   });
 
   /*
