@@ -59,6 +59,7 @@ li a {
     text-align: center;
     margin-top: 20px;
     font-weight: 500;
+    border-radius: 7px;
 }
 
 /**
@@ -144,6 +145,8 @@ a {
     font-size: 18px;
     height: 30px;
     margin-bottom: 0px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 .titleBoxHome h3 {
@@ -153,11 +156,14 @@ a {
     font-weight: 500;
     padding-top: 3px;
     font-family: 'Roboto', sans-serif;
+   
 }
 
 .contentBoxHome {
     background-color: rgba(66,33,11,0.15);
     height: 245px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
 }
 
 .contentBoxHome p {
@@ -169,6 +175,15 @@ a {
     color: #592D2B;
     padding: 4px;
     line-height: 1.3em;
+}
+
+.listaBtn .btn {
+    margin-top: 3px;
+    background-color: #42210B;
+    color: #FFF;
+    border-radius: 9px;
+    width: 200px;
+    height: 46px;
 }
 
 /**
@@ -183,6 +198,8 @@ a {
     color: #FFF;
     padding: 14px;
     line-height: 1.3em;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
 }
 
 .titolo-hidden h3 {
@@ -193,6 +210,17 @@ a {
     height: 122.5px;
 }
 
+.box-centrale {
+    background-color: rgba(66,33,11,0.15);
+    color: #42210B;
+    padding: 14px;
+    height: 245px;
+    border-radius: 12px;
+}
+
+.box-centrale .titolo-hidden h3  {
+    color: #42210B;
+}
 
 .sottobox-uno-due {
     background-color: rgba(66,33,11,0.15);
@@ -223,13 +251,14 @@ a {
 }
 
 
-#LinkPrimaFila span {
-    cursor: pointer;
-    font-weight: bold;
+.box-due .sottobox-uno-due-lista {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
-#LinkPrimaFila span:hover {
-    text-decoration: underline;
+.box-due .sottobox-uno-due {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 
 .sottobox-due {
@@ -264,6 +293,8 @@ a {
     padding: 14px;
     text-align: right;
     line-height: 1.3em;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 .box-uno-brown p {
@@ -361,6 +392,7 @@ a {
     padding-bottom: 23%;
     height: 0;
     overflow: hidden;
+    border-radius: 14px;
 }
 
 #mappa iframe {

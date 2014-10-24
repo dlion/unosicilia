@@ -13,24 +13,37 @@ $(document).ready(function() {
    * Se clicco sulla lista
    */
 
-  $("#linkFragole").click(function() {
+  var titoloBoxPage2 = $(".titolo-hidden h3");
+  var testoFrescoBoxPage2 = $(".testo-fresco p");
+
+  $("#btnFrutta").click(function() {
     banneroneFrutta.move(0);
+    titoloBoxPage2.text("Frutta");
+    testoFrescoBoxPage2.text("Qui ci va il testo dedicato alla frutta");
   });
 
-  $("#linkOlive").click(function() {
+  $("#btnOlio").click(function() {
     banneroneFrutta.move(1);
+    titoloBoxPage2.text("Olive e Olio");
+    testoFrescoBoxPage2.text("Qui ci va il testo dedicato alle olive e all'olio");
   });
 
-  $("#linkLimoni").click(function() {
+  $("#btnLimoni").click(function() {
     banneroneFrutta.move(2);
+    titoloBoxPage2.text("Limoni");
+    testoFrescoBoxPage2.text("Qui ci va il testo dedicato ai Limoni");
   });
 
-  $("#linkArance").click(function() {
+  $("#btnAgrumi").click(function() {
     banneroneFrutta.move(3);
+    titoloBoxPage2.text("Agrumi");
+    testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli agrumi");
   });
 
-  $("#linkPomodori").click(function() {
+  $("#btnOrtaggi").click(function() {
     banneroneFrutta.move(4);
+    titoloBoxPage2.text("Ortaggi");
+    testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli ortaggi");
   });
 
   /*
