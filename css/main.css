@@ -142,11 +142,9 @@ a {
 
 .titleBoxHome {
     background-color: #42210B;
-    font-size: 18px;
+    font-size: 17px;
     height: 30px;
     margin-bottom: 0px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
 }
 
 .titleBoxHome h3 {
@@ -162,14 +160,12 @@ a {
 .contentBoxHome {
     background-color: rgba(66,33,11,0.15);
     height: 245px;
-    border-bottom-right-radius: 14px;
-    border-bottom-left-radius: 14px;
 }
 
 .contentBoxHome p {
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     color: #592D2B;
@@ -193,7 +189,7 @@ a {
     background-color: #D73F22;
     width: 380px;
     height: 245px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     color: #FFF;
     padding: 14px;
@@ -230,7 +226,7 @@ a {
 }
 
 .sottobox-uno-due p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 100;
     line-height: 1.2em;
     padding: 4px;
@@ -243,7 +239,7 @@ a {
 }
 
 .sottobox-uno-due-lista p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 100;
     padding: 4px;
     margin-top: 50px;
@@ -269,7 +265,7 @@ a {
 
 .sottobox-due p {
     font-weight: 100;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.2em;
     padding: 4px;
 }
