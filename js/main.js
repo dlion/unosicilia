@@ -15,33 +15,40 @@ $(document).ready(function() {
 
   var titoloBoxPage2 = $(".titolo-hidden h3");
   var testoFrescoBoxPage2 = $(".testo-fresco p");
+  var doveSono = $("#btnFrutta");
 
   $("#btnFrutta").click(function() {
+    doveSono.removeClass("btnAttivo");
+    $(this).addClass("btnAttivo");
+    doveSono = $(this);
     banneroneFrutta.move(0);
     titoloBoxPage2.text("Frutta");
     testoFrescoBoxPage2.text("Qui ci va il testo dedicato alla frutta");
   });
 
   $("#btnOlio").click(function() {
+    doveSono.removeClass("btnAttivo");
+    $(this).addClass("btnAttivo");
+    doveSono = $(this);
     banneroneFrutta.move(1);
     titoloBoxPage2.text("Olive e Olio");
     testoFrescoBoxPage2.text("Qui ci va il testo dedicato alle olive e all'olio");
   });
 
-  $("#btnLimoni").click(function() {
-    banneroneFrutta.move(2);
-    titoloBoxPage2.text("Limoni");
-    testoFrescoBoxPage2.text("Qui ci va il testo dedicato ai Limoni");
-  });
-
   $("#btnAgrumi").click(function() {
-    banneroneFrutta.move(3);
+    doveSono.removeClass("btnAttivo");
+    $(this).addClass("btnAttivo");
+    doveSono = $(this);
+    banneroneFrutta.move(2);
     titoloBoxPage2.text("Agrumi");
     testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli agrumi");
   });
 
   $("#btnOrtaggi").click(function() {
-    banneroneFrutta.move(4);
+    doveSono.removeClass("btnAttivo");
+    $(this).addClass("btnAttivo");
+    doveSono = $(this);
+    banneroneFrutta.move(3);
     titoloBoxPage2.text("Ortaggi");
     testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli ortaggi");
   });
