@@ -291,14 +291,13 @@ a {
     background-color: #42210B;
     width: 380px;
     height: 245px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     color: #FFF;
     padding: 14px;
     text-align: right;
     line-height: 1.3em;
-    border-bottom-right-radius: 14px;
-    border-top-right-radius: 14px;
+    border-radius: 14px;
 }
 
 .box-uno-brown p {
@@ -406,7 +405,6 @@ a {
     padding-bottom: 23%;
     height: 0;
     overflow: hidden;
-    border-radius: 14px;
 }
 
 #mappa iframe {
