@@ -287,6 +287,19 @@ a {
  * TERZA PAGINA
  */
 
+.listaMenuLaterale {
+    margin-top: 20px;
+}
+
+.scrittaMenuLaterale {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.scrittaAttiva {
+    color: #D73F22;;
+}
+
 .box-uno-brown {
     background-color: #42210B;
     width: 380px;

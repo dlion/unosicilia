@@ -15,11 +15,12 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/kube.min.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="js/kube.min.js"></script>
-  <script src="js/unslider.min.js"></script>
+  <script type="text/javascript" src="js/unslider.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
@@ -116,7 +117,7 @@ compongono, puntando sulla ricerca e sull'innovazione per mettere in atto nuovi 
       <div class="section" id="section1">
         <div class="intro">
             <div class="units-row end units-split secondaImmagineIntro">
-                <div class="unit-100 end units-split banneroneSlide">
+                <div class="unit-100 end units-split banneroneSlide" id="slideFrutta">
                     <ul>
                         <li><img id="homeImage" src="./materiale/TRASFORMATI/FRUTTA.png" /></li>
                         <li><img id="homeImage" src="./materiale/TRASFORMATI/OLIVE_OLIO.png" /></li>
@@ -136,15 +137,15 @@ compongono, puntando sulla ricerca e sull'innovazione per mettere in atto nuovi 
                     <button class="btn" id="btnOrtaggi">Ortaggi</button>
                 </div>
                 <div class="unit-50 box-centrale">
-                    <div class="titolo-hidden">
+                    <div class="titolo-hidden" id="titoloBoxFrutta">
                         <h3>Frutta</h3>
                     </div>
-                    <div class="testo-fresco">
-                        <p>Qui ci va il testo dedicato alla Frutta</p>
+                    <div class="testo-fresco" id="testoBoxFrutta">
+                        <p>Commercializziamo una vasta gamma di frutta di stagione coltivata esclusivamente da aziende agricole siciliane ed immessa nel mercato dopo essere stata accuratamente selezionata. Grazie alle caratteristiche uniche del nostro territorio, all'esperienza e alla sapienza dei nostri agricoltori, otteniamo prodotti di grande qualità che ripropongono i sapori tipici della nostra terra.</p>
                     </div>
                 </div>
                 <div class="unit-30">
-                    <img id="produttoreImg" src="./materiale/calendario_prodotti.png"/>
+                    <a href="./materiale/TRASFORMATI/CALENDARIZZAZIONE_PRODOTTI.pdf"><img id="produttoreImg" src="./materiale/TRASFORMATI/CALENDARIZZAZIONE_PRODOTTI-01.png" alt="Calendario"/></a>
                 </div>
             </div>
         </div>
@@ -152,7 +153,7 @@ compongono, puntando sulla ricerca e sull'innovazione per mettere in atto nuovi 
       <div class="section" id="section2">
         <div class="intro">
             <div class="units-row end units-split secondaImmagineIntro">
-                <div class="unit-100 end units-split banneroneSlide">
+                <div class="unit-100 end units-split banneroneSlide" id="slideProduttori">
                     <ul>
                         <li><img id="homeImage" src="./materiale/TRASFORMATI/TERRA_DELLE_ROSE.png" /></li>
                         <li><img id="homeImage" src="./materiale/TRASFORMATI/BOSCO_FICUZZA.png" /></li>
@@ -163,18 +164,18 @@ compongono, puntando sulla ricerca e sull'innovazione per mettere in atto nuovi 
                 <div class="unit-95 riga-brown"></div>
             </div>
             <div class="units-row end content">
-                <div class="unit-20 listaBtn">
-                    <button class="btn btnAttivo" id="btnFrutta">Frutta</button>
-                    <button class="btn" id="btnOlio">Olive e Olio</button>
-                    <button class="btn" id="btnAgrumi">Agrumi</button>
-                    <button class="btn" id="btnOrtaggi">Ortaggi</button>
+                <div class="unit-20 listaMenuLaterale">
+                    <h4 class="scrittaMenuLaterale end width-100 scrittaAttiva" id="terraDelleRose">Terra delle Rose</h4>
+                    <img src="./materiale/TRASFORMATI/ELEMENTO_MENU_LATERALE.png" alt="elemento menu laterale" class="pause" />
+                    <h4 class="scrittaMenuLaterale end width-100" id="boscoFicuzza">Bosco Ficuzza</h4>
+                    <img src="./materiale/TRASFORMATI/ELEMENTO_MENU_LATERALE.png" alt="elemento menu laterale" class="pause" />
                 </div>
                 <div class="unit-50 box-centrale">
-                    <div class="titolo-hidden">
-                        <h3>Frutta</h3>
+                    <div class="titoloBoxProduttori">
+                        <h3>Azienda agricola Terra delle Rose</h3>
                     </div>
-                    <div class="testo-fresco">
-                        <p>Qui ci va il testo dedicato alla Frutta</p>
+                    <div class="testoBoxProduttori">
+                        <p>L'azienda si trova in Contrada Rossella, SNC a Piana degli Albanesi. La sua attività è la coltivazione di frutti oleosi.</p>
                     </div>
                 </div>
                 <div class="unit-30 box-uno-brown">

@@ -8,52 +8,80 @@ $(document).ready(function() {
 
   //Il banner che mostra la frutta
   var banneroneFrutta = slidey.data('unslider-1');
+  var banneroneProduttori = slidey.data('unslider-2');
+  banneroneProduttori.to(1);
 
   /*
-   * Se clicco sulla lista
+   * Se clicco sulla listaa iniziale
    */
 
-  var titoloBoxPage2 = $(".titolo-hidden h3");
-  var testoFrescoBoxPage2 = $(".testo-fresco p");
+  var titoloBoxPage2 = $("#titoloBoxFrutta h3");
+  var testoFrescoBoxPage2 = $("#testoBoxFrutta p");
   var doveSono = $("#btnFrutta");
 
   $("#btnFrutta").click(function() {
     doveSono.removeClass("btnAttivo");
     $(this).addClass("btnAttivo");
     doveSono = $(this);
-    banneroneFrutta.move(0);
+    banneroneFrutta.to(0);
     titoloBoxPage2.text("Frutta");
-    testoFrescoBoxPage2.text("Qui ci va il testo dedicato alla frutta");
+    testoFrescoBoxPage2.text("Commercializziamo una vasta gamma di frutta di stagione coltivata esclusivamente da aziende agricole siciliane ed immessa nel mercato dopo essere stata accuratamente selezionata. Grazie alle caratteristiche uniche del nostro territorio, all' esperienza e alla sapienza dei nostri agricoltori, otteniamo prodotti di grande qualità che ripropongono i sapori tipici della nostra terra.");
   });
 
   $("#btnOlio").click(function() {
     doveSono.removeClass("btnAttivo");
     $(this).addClass("btnAttivo");
     doveSono = $(this);
-    banneroneFrutta.move(1);
+    banneroneFrutta.to(1);
     titoloBoxPage2.text("Olive e Olio");
-    testoFrescoBoxPage2.text("Qui ci va il testo dedicato alle olive e all'olio");
+    testoFrescoBoxPage2.text("La Sicilia è una delle regioni con il maggior numero di varietà di olivo di tutto il bacino del Mediterraneo, molte di queste sono varietà autoctone di antichissima coltivazione ognuna delle quali ha una propria zona di vocazione e da cui si ricavano oli di oliva con rese elevate e di ottima qualità.");
   });
 
   $("#btnAgrumi").click(function() {
     doveSono.removeClass("btnAttivo");
-    $(this).addClass("btnAttivo");
     doveSono = $(this);
-    banneroneFrutta.move(2);
+    doveSono.addClass("btnAttivo");
+    banneroneFrutta.to(2);
     titoloBoxPage2.text("Agrumi");
-    testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli agrumi");
+    testoFrescoBoxPage2.text("Gli agrumi, frutti dall'inconfondibile profumo, rientrano a pieno titolo nell'elenco dei prodotti che rappresentano non solo l'agricoltura siciliana ma anche uno dei nostri prodotti di punta. Le loro caratteristiche organolettiche ed il loro alto contenuto di vitamina C li rendono un alimento utilissimo per la salute umana.");
   });
 
   $("#btnOrtaggi").click(function() {
     doveSono.removeClass("btnAttivo");
-    $(this).addClass("btnAttivo");
     doveSono = $(this);
-    banneroneFrutta.move(3);
+    doveSono.addClass("btnAttivo");
+    banneroneFrutta.to(3);
     titoloBoxPage2.text("Ortaggi");
-    testoFrescoBoxPage2.text("Qui ci va il testo dedicato agli ortaggi");
+    testoFrescoBoxPage2.text("Puntiamo sulla ricerca e sull' innovazione per mettere in atto metodi che ci permettano di migliorare le colture che produciamo e che caratterizzano la nostra regione, rispondendo alle esigenze del consumatore finale offrendo prodotti sani, gustosi e di alta qualità, nati solo ed esclusivamente da scelte consapevoli a sostegno dell' ambiente. Monitoriamo ogni fase della produzione, dal campo fino al consumatore finale, proponendo una vasta gamma di ortaggi di stagione in piena conformità agli standard di certificazione richiesti dal settore.");
   });
 
   /*
+   * La lista della sezione Produttori
+   */
+
+  var titoloBoxProduttori = $(".titoloBoxProduttori h3");
+  var testoBoxProduttori = $(".testoBoxProduttori p");
+  var doveSono2 = $("#terraDelleRose");
+
+  $("#terraDelleRose").click(function() {
+    doveSono2.removeClass("scrittaAttiva");
+    doveSono2 = $(this);
+    doveSono2.addClass("scrittaAttiva");
+    banneroneProduttori.to(0);
+    titoloBoxProduttori.text("Azienda agricola Terra delle Rose");
+    testoBoxProduttori.text("L'azienda si trova in Contrada Rossella, SNC a Piana degli Albanesi. La sua attività è la coltivazione di frutti oleosi.");
+  });
+
+  $("#boscoFicuzza").click(function() {
+    doveSono2.removeClass("scrittaAttiva");
+    doveSono2 = $(this);
+    doveSono2.addClass("scrittaAttiva");
+    banneroneProduttori.to(1);
+    titoloBoxProduttori.text("Azienda agricola Bosco Ficuzza");
+    testoBoxProduttori.text("La Bosco Ficuzza azienda agricola biologica s.c. si trova su due colline, Pero e Cannatino, in territorio di Cerda (Pa) alle falde della catena montuosa delle Madonie. Si converte al biologico nel 2001, preoccupandosi di ridurre al minimo gli impatti delle attività agricole dannose per l'ambiente, riducendo gli apporti di sostanze chimiche e assicurando un approccio responsabile nei confronti della salubrità e la sicurezza dei lavoratori e del benessere degli animali.");
+  });
+
+    /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
    */
    $("li[data-menuanchor='Home']").click(function() {
