@@ -9,9 +9,10 @@ $(document).ready(function() {
   //Il banner che mostra la frutta
   var banneroneFrutta = slidey[0];
   var banneroneProduttori = slidey[1];
+  var banneroneTrasformati = slidey[2];
 
   /*
-   * Se clicco sulla listaa iniziale
+   * Se clicco sulla lista iniziale
    */
 
   var titoloBoxPage2 = $("#titoloBoxFrutta h3");
@@ -78,6 +79,49 @@ $(document).ready(function() {
     banneroneProduttori.to(1);
     titoloBoxProduttori.text("Azienda agricola Bosco Ficuzza");
     testoBoxProduttori.text("La Bosco Ficuzza azienda agricola biologica s.c. si trova su due colline, Pero e Cannatino, in territorio di Cerda (Pa) alle falde della catena montuosa delle Madonie. Si converte al biologico nel 2001, preoccupandosi di ridurre al minimo gli impatti delle attività agricole dannose per l'ambiente, riducendo gli apporti di sostanze chimiche e assicurando un approccio responsabile nei confronti della salubrità e la sicurezza dei lavoratori e del benessere degli animali.");
+  });
+
+  /*
+   * La lista della sezione Trasformati
+   */
+  var titoloBoxTrasformati = $(".titoloBoxTrasformati h3");
+  var testoBoxTrasformati = $(".testoBoxTrasformati p");
+  var doveSono3 = $("#verdureGrigliate");
+
+  $("#verdureGrigliate").click(function() {
+    doveSono3.removeClass("scrittaAttiva");
+    doveSono3 = $(this);
+    doveSono3.addClass("scrittaAttiva");
+    banneroneTrasformati.to(0);
+    titoloBoxTrasformati.text("Le verdure grigliate");
+    testoBoxTrasformati.text("I grigliati presentano un sapore rustico, arricchito da un bilanciato mix di spezie mediterranee. Sono gustosi antipasti o contorni ai secondi piatti a base di carne o di pesce.");
+  });
+
+  $("#leComposte").click(function() {
+    doveSono3.removeClass("scrittaAttiva");
+    doveSono3 = $(this);
+    doveSono3.addClass("scrittaAttiva");
+    banneroneTrasformati.to(1);
+    titoloBoxTrasformati.text("Le composte");
+    testoBoxTrasformati.text("Le composte di prugne e peperoncino e prugne con chiodi di garofano vengono realizzate con la varietà Stanley. Il sapore fresco delle prugne con il piccante del peperoncino è ideale per accompagnare formaggi stagionati e carni rosse. Quella con chiodi di garofano ha un sapore esotico e delicato, ottima da spalmare sul pane o su fette biscottate. La composta di cipolle si caratterizza per il sapore agrodolce e speziato. Si accoppia con i formaggi stagionati, le carni ed i vini rossi.");
+  });
+
+  $("#iPate").click(function() {
+    doveSono3.removeClass("scrittaAttiva");
+    doveSono3 = $(this);
+    doveSono3.addClass("scrittaAttiva");
+    banneroneTrasformati.to(2);
+    titoloBoxTrasformati.text("I Paté");
+    testoBoxTrasformati.text("Fatti con gli ingredienti semplici della tradizione mediterranea, i paté di zucchine, di melanzane, di carciofi, di peperoni e di ceci sono ideali per insaporire bruschette ed accompagnare secondi piatti.");
+  });
+
+  $("#sugoOlive").click(function() {
+    doveSono3.removeClass("scrittaAttiva");
+    doveSono3 = $(this);
+    doveSono3.addClass("scrittaAttiva");
+    banneroneTrasformati.to(3);
+    titoloBoxTrasformati.text("Sugo e Olive verdi");
+    testoBoxTrasformati.text("Il sugo mediterraneo viene preparato secondo la tradizione culinaria siciliana. Si gusta come condimento per la pasta o per le bruschette. Prodotte sulle colline di trapani, le olive verdi sono ottime come snack o per accompagnare un cocktail.");
   });
 
     /*
