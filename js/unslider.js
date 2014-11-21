@@ -233,19 +233,17 @@
 	//  Create a jQuery plugin
 	$.fn.unslider = function(o) {
 		var len = this.length;
+        var elementi = [];
+        this.each(function(index) {
+          var me = $(this),
+			  key = 'unslider' + (len > 1 ? '-' + ++index : ''),
+			  instance = (new Unslider).init(me, o);
+              elementi.push(instance);
+		});
 
 		//  Enable multiple-slider support
-		return this.each(function(index) {
-			//  Cache a copy of $(this), so it
-			var me = $(this),
-				key = 'unslider' + (len > 1 ? '-' + ++index : ''),
-				instance = (new Unslider).init(me, o);
-
-                console.log("KEEEEEYYY: "+key+"\n");
-			//  Invoke an Unslider instance
-			me.data(key, instance).data('key', key);
-		});
-	};
+		return elementi;
+    };
 
 	Unslider.version = "1.0.0";
 })(jQuery, false);

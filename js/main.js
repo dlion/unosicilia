@@ -7,9 +7,8 @@ $(document).ready(function() {
   });
 
   //Il banner che mostra la frutta
-  var banneroneFrutta = slidey.data('unslider-1');
-  var banneroneProduttori = slidey.data('unslider-2');
-  banneroneProduttori.to(1);
+  var banneroneFrutta = slidey[0];
+  var banneroneProduttori = slidey[1];
 
   /*
    * Se clicco sulla listaa iniziale
