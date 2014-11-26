@@ -59,8 +59,8 @@ $(document).ready(function() {
    * La lista della sezione Produttori
    */
 
-  var titoloBoxProduttori = $(".titoloBoxProduttori h3");
-  var testoBoxProduttori = $(".testoBoxProduttori p");
+  var titoloBoxProduttori = $("#titoloBoxProduttori h3");
+  var testoBoxProduttori = $("#testoBoxProduttori p");
   var doveSono2 = $("#terraDelleRose");
 
   $("#terraDelleRose").click(function() {
@@ -84,8 +84,8 @@ $(document).ready(function() {
   /*
    * La lista della sezione Trasformati
    */
-  var titoloBoxTrasformati = $(".titoloBoxTrasformati h3");
-  var testoBoxTrasformati = $(".testoBoxTrasformati p");
+  var titoloBoxTrasformati = $("#titoloBoxTrasformati h3");
+  var testoBoxTrasformati = $("#testoBoxTrasformati p");
   var doveSono3 = $("#verdureGrigliate");
 
   $("#verdureGrigliate").click(function() {
