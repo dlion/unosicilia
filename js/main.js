@@ -1,3 +1,13 @@
+
+
+$(document).ready(function() {
+
+  var slidey = $(".banneroneSlide").unslider({
+    fluid: true,
+    dots: true,
+    delay: false
+  });
+
   // Configurazione del plugin fullPage
 $('#fullpage').fullpage({
   anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
@@ -50,14 +60,6 @@ $('#fullpage').fullpage({
      }
    }
 });
-
-
-$(document).ready(function() {
-  var slidey = $(".banneroneSlide").unslider({
-    fluid: true,
-    dots: true,
-    delay: false
-  });
 
   //Il banner che mostra la frutta
   var banneroneFrutta = slidey[0];
