@@ -4,7 +4,7 @@ $('#fullpage').fullpage({
   slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
   css3: true,
   fixedElements: 'header',
-  resize: true,
+  resize: false,
   paddingTop: '65px',
   onLeave: function(index, nextIndex, direction) {
     switch(index) {
