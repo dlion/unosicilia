@@ -75,8 +75,8 @@ $('#fullpage').fullpage({
   var doveSono = $("#btnFrutta");
 
   $("#btnFrutta").click(function() {
-    doveSono.removeClass("btnAttivo");
-    $(this).addClass("btnAttivo");
+    doveSono.removeClass("scrittaAttiva");
+    $(this).addClass("scrittaAttiva");
     doveSono = $(this);
     banneroneFrutta.to(0);
     titoloBoxPage2.text("Frutta");
@@ -84,8 +84,8 @@ $('#fullpage').fullpage({
   });
 
   $("#btnOlio").click(function() {
-    doveSono.removeClass("btnAttivo");
-    $(this).addClass("btnAttivo");
+    doveSono.removeClass("scrittaAttiva");
+    $(this).addClass("scrittaAttiva");
     doveSono = $(this);
     banneroneFrutta.to(1);
     titoloBoxPage2.text("Olive e Olio");
@@ -93,18 +93,18 @@ $('#fullpage').fullpage({
   });
 
   $("#btnAgrumi").click(function() {
-    doveSono.removeClass("btnAttivo");
+    doveSono.removeClass("scrittaAttiva");
     doveSono = $(this);
-    doveSono.addClass("btnAttivo");
+    doveSono.addClass("scrittaAttiva");
     banneroneFrutta.to(2);
     titoloBoxPage2.text("Agrumi");
     testoFrescoBoxPage2.text("Gli agrumi, frutti dall'inconfondibile profumo, rientrano a pieno titolo nell'elenco dei prodotti che rappresentano non solo l'agricoltura siciliana ma anche uno dei nostri prodotti di punta. Le loro caratteristiche organolettiche ed il loro alto contenuto di vitamina C li rendono un alimento utilissimo per la salute umana.");
   });
 
   $("#btnOrtaggi").click(function() {
-    doveSono.removeClass("btnAttivo");
+    doveSono.removeClass("scrittaAttiva");
     doveSono = $(this);
-    doveSono.addClass("btnAttivo");
+    doveSono.addClass("scrittaAttiva");
     banneroneFrutta.to(3);
     titoloBoxPage2.text("Ortaggi");
     testoFrescoBoxPage2.text("Puntiamo sulla ricerca e sull' innovazione per mettere in atto metodi che ci permettano di migliorare le colture che produciamo e che caratterizzano la nostra regione, rispondendo alle esigenze del consumatore finale offrendo prodotti sani, gustosi e di alta qualità, nati solo ed esclusivamente da scelte consapevoli a sostegno dell' ambiente. Monitoriamo ogni fase della produzione, dal campo fino al consumatore finale, proponendo una vasta gamma di ortaggi di stagione in piena conformità agli standard di certificazione richiesti dal settore.");
