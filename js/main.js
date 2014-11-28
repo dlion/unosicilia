@@ -53,7 +53,6 @@ $('#fullpage').fullpage({
 
 
 $(document).ready(function() {
-
   var slidey = $(".banneroneSlide").unslider({
     fluid: true,
     dots: true,
@@ -62,8 +61,8 @@ $(document).ready(function() {
 
   //Il banner che mostra la frutta
   var banneroneFrutta = slidey[0];
-  //var banneroneProduttori = slidey[1];
-  //var banneroneTrasformati = slidey[2];
+  var banneroneProduttori = slidey[1];
+  var banneroneTrasformati = slidey[2];
 
   /*
    * Se clicco sulla lista iniziale
@@ -113,7 +112,6 @@ $(document).ready(function() {
    * La lista della sezione Produttori
    */
 
-  /*
   var titoloBoxProduttori = $("#titoloBoxProduttori h3");
   var testoBoxProduttori = $("#testoBoxProduttori p");
   var doveSono2 = $("#terraDelleRose");
@@ -135,11 +133,10 @@ $(document).ready(function() {
     titoloBoxProduttori.text("Azienda agricola Bosco Ficuzza");
     testoBoxProduttori.text("La Bosco Ficuzza azienda agricola biologica s.c. si trova su due colline, Pero e Cannatino, in territorio di Cerda (Pa) alle falde della catena montuosa delle Madonie. Si converte al biologico nel 2001, preoccupandosi di ridurre al minimo gli impatti delle attività agricole dannose per l'ambiente, riducendo gli apporti di sostanze chimiche e assicurando un approccio responsabile nei confronti della salubrità e la sicurezza dei lavoratori e del benessere degli animali.");
   });
-*/
+
   /*
    * La lista della sezione Trasformati
    */
- /*
   var titoloBoxTrasformati = $("#titoloBoxTrasformati h3");
   var testoBoxTrasformati = $("#testoBoxTrasformati p");
   var doveSono3 = $("#verdureGrigliate");
@@ -180,7 +177,6 @@ $(document).ready(function() {
     testoBoxTrasformati.text("Il sugo mediterraneo viene preparato secondo la tradizione culinaria siciliana. Si gusta come condimento per la pasta o per le bruschette. Prodotte sulle colline di trapani, le olive verdi sono ottime come snack o per accompagnare un cocktail.");
   });
 
- */
   /*
    * Se premi un pulsante tolgo l'active e lo metto in quello selezionato
    */
