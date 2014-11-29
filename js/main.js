@@ -179,6 +179,7 @@ $('#fullpage').fullpage({
       titoloBoxTrasformati.text("Sugo e Olive verdi");
       testoBoxTrasformati.text("Il sugo mediterraneo viene preparato secondo la tradizione culinaria siciliana. Si gusta come condimento per la pasta o per le bruschette. Prodotte sulle colline di trapani, le olive verdi sono ottime come snack o per accompagnare un cocktail.");
     });
+    $.fn.fullpage.reBuild();
    }
 });
 
