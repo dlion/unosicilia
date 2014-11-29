@@ -11,51 +11,50 @@ $(document).ready(function() {
   // Configurazione del plugin fullPage
 $('#fullpage').fullpage({
   anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
-  slidesColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
+  sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
   css3: true,
   fixedElements: 'header',
-  resize: false,
   paddingTop: '65px',
   onLeave: function(index, nextIndex, direction) {
     switch(index) {
       case 1:
-        $("li[data-menuanchor='Home']").removeClass("active");
+        $("li[dove='Home']").removeClass("active");
       break;
       case 2:
-        $("li[data-menuanchor='Prodotti']").removeClass("active");
+        $("li[dove='Prodotti']").removeClass("active");
       break;
       case 3:
-        $("li[data-menuanchor='Produttori']").removeClass("active");
+        $("li[dove='Produttori']").removeClass("active");
       break;
       case 4:
-        $("li[data-menuanchor='Trasformati']").removeClass("active");
+        $("li[dove='Trasformati']").removeClass("active");
       break;
       case 5:
-        $("li[data-menuanchor='Certificazioni']").removeClass("active");
+        $("li[dove='Certificazioni']").removeClass("active");
       break;
       case 6:
-        $("li[data-menuanchor='Contatti']").removeClass("active");
+        $("li[dove='Contatti']").removeClass("active");
       break;
     }
 
      switch(nextIndex) {
        case 1:
-         $("li[data-menuanchor='Home']").addClass("active");
+         $("li[dove='Home']").addClass("active");
         break;
       case 2:
-         $("li[data-menuanchor='Prodotti']").addClass("active");
+         $("li[dove='Prodotti']").addClass("active");
         break;
       case 3:
-         $("li[data-menuanchor='Produttori']").addClass("active");
+         $("li[dove='Produttori']").addClass("active");
         break;
       case 4:
-         $("li[data-menuanchor='Trasformati']").addClass("active");
+         $("li[dove='Trasformati']").addClass("active");
         break;
       case 5:
-         $("li[data-menuanchor='Certificazioni']").addClass("active");
+         $("li[dove='Certificazioni']").addClass("active");
         break;
       case 6:
-         $("li[data-menuanchor='Contatti']").addClass("active");
+         $("li[dove='Contatti']").addClass("active");
         break;
      }
    }
