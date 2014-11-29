@@ -53,6 +53,7 @@ $('#fullpage').fullpage({
          $("li[dove='Contatti']").addClass("active");
         break;
      }
+     $.fn.fullpage.reBuild();
    },
 
    afterRender: function() {
@@ -62,7 +63,6 @@ $('#fullpage').fullpage({
        delay: false
      });
 
-     $.fn.fullpage.reBuild();
 
     //Il banner che mostra la frutta
     var banneroneFrutta = slidey[0];
