@@ -8,6 +8,7 @@ $('#fullpage').fullpage({
   anchors: ["Home", "Prodotti", "Produttori", "Trasformati", "Certificazioni", "Contatti"],
   sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF'],
   css3: true,
+  resize: false,
   fixedElements: 'header',
   paddingTop: '65px',
   onLeave: function(index, nextIndex, direction) {
