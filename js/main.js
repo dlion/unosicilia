@@ -54,12 +54,14 @@ $('#fullpage').fullpage({
         break;
      }
    },
+
    afterRender: function() {
      var slidey = $(".banneroneSlide").unslider({
        fluid: true,
        dots: true,
        delay: false
      });
+
     //Il banner che mostra la frutta
     var banneroneFrutta = slidey[0];
     var banneroneProduttori = slidey[1];
