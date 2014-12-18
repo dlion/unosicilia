@@ -145,6 +145,8 @@ a {
     font-size: 17px;
     height: 30px;
     margin-bottom: 0px;
+     border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
 .titleBoxHome h3 {
